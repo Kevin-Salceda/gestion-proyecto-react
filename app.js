@@ -119,7 +119,7 @@ const App = () => {
     {
       id: 4,
       descripcion: 'Guardar productos en lista de deseos (usuario registrado)',
-      prioridad: 'Media',
+      prioridad: 'Alta',
       estimacion: '7 puntos',
     },
     {
@@ -145,14 +145,14 @@ const App = () => {
   const sprints = [
      {
       numero: 1,
-      meta: 'Navegación por categorías de productos',
+      meta: 'Navegación por categorías de productos y Lista de Deseos',
       tareas: [
         'Crear esquema de diseño',
         'Desarrollar interfaz de usuario',
         'Implementar sistema de navegación',
-        
+        'Implementar funcionalidad de lista de deseos', // Movido al primer sprint
       ],
-      duracion: 2,
+      Duracion: 2,
       Recursos: 'Desarrollador Frontend,Diseñador UI',
     },
     {
@@ -163,7 +163,7 @@ const App = () => {
         'Implementar funcionalidad de registro e inicio de sesión',
         'Diseñar y desarrollar vista de detalles del producto',
       ],
-      duracion: 3,
+      Duracion: 3,
       Recursos : 'Desarrollador Frontend, Desarrollador Backend, Diseñador UI',
     },
     {
@@ -175,14 +175,13 @@ const App = () => {
         'Integrar formulario de contacto',
         'Implementar funcionalidad de agregar productos al carrito',
       ],
-      duracion: 4,
+      Duracion: 4,
       Recursos: 'Desarrollador Frontend, Desarrollador Backend, Diseñador UI, Especialista en Marketing',
     },
     {
       numero: 4,
-      meta: 'Lista de Deseos y Usuario Registrado',
+      meta: 'Usuario Registrado',
       tareas: [
-        'Implementar funcionalidad de lista de deseos',
         'Crear página de registro de usuarios',
         'Desarrollar funcionalidad de inicio de sesión',
         'Integrar sistema de pago seguro',
@@ -201,9 +200,6 @@ const App = () => {
       duracion: 5,
     recursos: 'Desarrollador Frontend, Desarrollador Backend, Diseñador UI, Especialista en Logística',
   },
-    {
-        
-    },
   ];
 
   return (
@@ -214,5 +210,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
